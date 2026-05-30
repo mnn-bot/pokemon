@@ -131,6 +131,12 @@ time{
 
 }
 
+.modo-claro{
+    background-color: #a5a5a5;
+    color: black;
+    cursor: pointer;
+}
+
 @media(max-width: 768px){
     .times,
     .placar{

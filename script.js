@@ -4,7 +4,7 @@ const pontosAzulEl = document.getElementById("pontosAzul");
 const pontosVermelhoEl = document.getElementById("pontosVermelho");
 const resultadoEl = document.getElementById("resultado");
 const sortearBtn = document.getElementById("sortearBtn");
-
+const modoClaro = document.getElementById("modoclaro");
 const quantidadePorTime = 6;
 const maxPokemon = 1025; // variaveis futuras
 
@@ -137,3 +137,7 @@ function limparTela(){
     resultadoEl.textContent = "";
     resultadoEl.className = "";
 }
+
+modoClaro.addEventListener("click", function(){
+    document.body.classList.add("modo-claro")
+});
