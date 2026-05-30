@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body{
+    background: #10141f;
+    color: whitesmoke;
+    min-height: 100vh;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    text-align:center;
+}
+
+h1{
+    margin-bottom: 20px;
+    border: none;
+    font-size: 36px;
+}
+
+button{
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    background: #ffcc00;
+    color: #111;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+button:hover{
+    background-color: #e3a700;
+}
+
+.placar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.placar div{
+    background: #1b2233;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.placar p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.times{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 25px;
+}
+
+time{
+    background: #151b2b;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.card{
+   background: #222b40; 
+   border-radius: 14px;
+   padding: 15px;
+   border: 2px solid transparent;
+}
+
+.card.azul{
+    border-color: #0000ff;
+}
+
+.card.vermelho{
+    border-color: #ff0000;
+}
+
+.card img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain; 
+    
+}
+
+.card h3{
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    color: seashell;
+}
+
+.card p{
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.tipo{
+    display: inline-block;
+    background: #333;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin: 3px;
+    font-size: 12px;
+}
+
+.vencedor{
+    color: rgb(0, 203, 0);
+
+}
+
+.empate{
+    color: aqua;
+
+}
+
+@media(max-width: 768px){
+    .times,
+    .placar{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        grid-template-columns: 1fr;
+    }
+}
