@@ -97,8 +97,8 @@ function renderizarTime(time, elemento, cor){
         <p>HP: ${pokemon.hp} </p>
         <p>Ataque: ${pokemon.ataque} </p>
         <p>Defesa: ${pokemon.defesa} </p>
-        <p>Defesa: ${pokemon.ataquesp} </p>
-        <p>Defesa: ${pokemon.defesasp} </p>
+        <p>Ataque-SP: ${pokemon.ataquesp} </p>
+        <p>Defesa-SP: ${pokemon.defesasp} </p>
         <p>Velocidade: ${pokemon.velocidade} </p>
         <p><strong>Total: ${pokemon.hp + pokemon.ataque + pokemon.defesa + pokemon.ataquesp + pokemon.defesasp +pokemon.velocidade}</strong> </p>
         `;
@@ -138,6 +138,12 @@ function limparTela(){
     resultadoEl.className = "";
 }
 
-modoClaro.addEventListener("click", function(){
-    document.body.classList.add("modo-claro")
+modoClaro.addEventListener("click", () => {
+    if(document.body.classList.contains("modo-claro")){
+        document.body.classList.remove("modo-claro");
+        modoClaro.textContent = "modo claro";
+    } else{
+        document.body.classList.add("modo-claro");
+        modoClaro.textContent = "modo escuro";
+    }
 });

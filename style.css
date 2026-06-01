@@ -25,6 +25,10 @@ h1{
     font-size: 36px;
 }
 
+.nom{
+    color: whitesmoke;
+}
+
 button{
     padding: 14px 28px;
     border: none;
@@ -90,8 +94,19 @@ time{
     border-color: #0000ff;
 }
 
+.card.azul:hover{
+    background-color: #0000ff;
+}
+
+
+
 .card.vermelho{
     border-color: #ff0000;
+}
+
+
+.card.vermelho:hover{
+    background-color: #ff0000;
 }
 
 .card img{
@@ -114,11 +129,12 @@ time{
 
 .tipo{
     display: inline-block;
-    background: #333;
+    background: #ffdc68;
     padding: 5px 8px;
     border-radius: 8px;
     margin: 3px;
     font-size: 12px;
+    color: black ;
 }
 
 .vencedor{
@@ -132,8 +148,75 @@ time{
 }
 
 .modo-claro{
-    background-color: #a5a5a5;
-    color: black;
+    background-color: #e2e2e2;
+    color: rgb(87, 87, 87);
+
+    .nom{
+        color: rgb(0, 0, 0);
+    }
+
+    *{
+        color: #000000;
+    }
+
+
+    h{
+        color: black;
+    }
+
+    .card p{
+        background-color: white;
+    }
+
+    .card h3{
+        color: black;
+    }
+
+    .card{
+        background-color: rgb(190, 190, 190);
+        color: black;
+    }
+
+    .card.azul{
+    border-color: #9696ff;
+    }
+
+    .card.azul:hover{
+    background-color: #a6a6ff;
+    }
+
+    .card.vermelho{
+    border-color: #ff8c8c;
+    }
+
+
+    .card.vermelho:hover{
+    background-color: #ff9d9d;
+    }
+
+    .placar{
+        background-color: #e2e2e2
+    }
+
+    .placar div{
+        background-color: #a9bcdf;
+    }
+
+    .card p{
+        background-color: rgb(190, 190, 190);
+    }
+
+    
+
+    button{
+        background-color: #01b3bc;
+    }
+
+    .vencedor{
+        color: rgb(0, 47, 22);
+    }
+
+    
 }
 
 @media(max-width: 768px){
