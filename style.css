@@ -164,10 +164,6 @@ time{
         color: black;
     }
 
-    .card p{
-        background-color: white;
-    }
-
     .card h3{
         color: black;
     }
@@ -203,7 +199,8 @@ time{
     }
 
     .card p{
-        background-color: rgb(190, 190, 190);
+        font-size: 14px;
+        margin: 4px 0;
     }
 
     
